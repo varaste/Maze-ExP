@@ -6,7 +6,7 @@
 #include <ctime>
 #include <time.h>
 #include <cstdlib>
-//12
+//13
 using namespace std;
 int main() {
 
@@ -24,7 +24,8 @@ int main() {
 	0,0,0,1,0,1,1,0,1,0,
 	0,1,0,1,0,1,0,0,1,0,
 	0,1,1,0,0,1,1,0,1,0,
-	0,0,0,0,0,0,0,0,0,0 }, an[10][10] = {0};*/
+	0,0,0,0,0,0,0,0,0,0 
+	}, an[10][10] = {0};*/
 
 
 
@@ -125,8 +126,6 @@ int main() {
 					SetConsoleTextAttribute(hstdout, 0x0e); //Color for text
 					cout << char(219) << char(219);
 				}
-
-
 
 				if (an[i][j] == 0 && i != 9 && i != 0 && j != 0 && j != 9) {
 					SetConsoleTextAttribute(hstdout, 0x0f); //Color for text
