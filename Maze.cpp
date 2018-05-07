@@ -137,12 +137,7 @@ int main() {
 					SetConsoleTextAttribute(hstdout, 0x0a); //Color for text
 					cout << char(219);
 				}
-				if (an[i][j] == 4) {
-					SetConsoleTextAttribute(hstdout, 0x0c); //Color for text
-					cout << char(219);
-					SetConsoleTextAttribute(hstdout, 0x0c); //Color for text
-					cout << char(219);
-				}
+			
 			}
 
 			cout << endl;
