@@ -4,7 +4,6 @@
 #include <windows.h>
 #include <conio.h>
 #include <ctime>
-#include <time.h>
 #include <cstdlib>
 //13
 using namespace std;
@@ -89,12 +88,7 @@ int main() {
 			a[x - 1][y] = 4;
 			an[x - 1][y] = 4;
 		}
-		if (answer == "r" && (a[x][y + 1] == 1 || a[x][y + 1] == 2)) {
-			if (a[x][y + 1] == 2) {
-				a[x][y] = 1;
-				an[x][y] = 0;
-			}
-			an[x][y + 1] = 2;
+
 			a[x][y + 1] = 2;
 
 			y++;
