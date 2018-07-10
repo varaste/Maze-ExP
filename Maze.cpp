@@ -21,21 +21,7 @@ int main() {
 	0,1,1,1,0,1,1,1,1,0,
 	0,1,0,1,0,1,1,0,1,0,
 	0,0,0,1,0,1,1,0,1,0,
-	0,1,0,1,0,1,0,0,1,0,
-	0,1,1,0,0,1,1,0,1,0,
-	0,0,0,0,0,0,0,0,0,0 
-	}, an[10][10] = {0};*/
-
-
-
-	int a[10][10] = { 0 }, an[10][10] = { 0 };
-	//be
-	string answer;
-	unsigned seed = time(NULL);
-	srand(seed);
-	m = x = sx = rand() % 2 + 1;
-	n = y = sy = rand() % 2 + 1;
-	while (m != 9 && n != 9) {
+	!= 9 && n != 9) {
 		a[m][n] = 1;
 		k = rand() % 2;
 		if (k == 0)
@@ -80,17 +66,7 @@ int main() {
 				an[x][y] = 0;
 			}
 			an[x - 1][y] = 2;
-			a[x - 1][y] = 2;
-
-			x--;
-		}
-		else if (answer == "u" && a[x - 1][y] == 0 && x != 9 && x - 1 != 0 && y != 0 && y != 9) {
-			a[x - 1][y] = 4;
-			an[x - 1][y] = 4;
-		}
-
-			a[x][y + 1] = 2;
-
+		
 			y++;
 		}
 		else if (answer == "r" && a[x][y + 1] == 0 && x != 9 && x != 0 && y != 0 && y + 1 != 9) {
@@ -115,15 +91,7 @@ int main() {
 
 		cout << endl;
 		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < 10; j++) {
-				if (i == 9 || i == 0 || j == 0 || j == 9) {
-					SetConsoleTextAttribute(hstdout, 0x0e); //Color for text
-					cout << char(219) << char(219);
-				}
-
-				if (an[i][j] == 0 && i != 9 && i != 0 && j != 0 && j != 9) {
-					SetConsoleTextAttribute(hstdout, 0x0f); //Color for text
-					cout << char(219) << char(219);
+				cout << char(219) << char(219);
 				}
 				if (an[i][j] == 2) {
 					SetConsoleTextAttribute(hstdout, 0x0a); //Color for text
