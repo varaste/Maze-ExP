@@ -51,15 +51,6 @@ int main() {
 				a[x][y] = 1;
 				an[x][y] = 0;
 			}
-			an[x + 1][y] = 2;
-			a[x + 1][y] = 2;
-
-			x++;
-		}
-		else if (answer == "d" && a[x + 1][y] == 0 && x + 1 != 9 && x + 1 != 0 && y != 0 && y != 9) {
-			a[x + 1][y] = 4;
-			an[x + 1][y] = 4;
-		}
 		if (answer == "u" && (a[x - 1][y] == 1 || a[x - 1][y] == 2)) {
 			if (a[x - 1][y] == 2) {
 				a[x][y] = 1;
@@ -82,9 +73,6 @@ int main() {
 			a[x][y - 1] = 2;
 
 			y--;
-		}
-		else if (answer == "l" && a[x][y - 1] == 0 && x != 9 && x != 0 && y - 1 != 0 && y != 9) {
-			a[x][y - 1] = 4;
 			an[x][y - 1] = 4;
 		}
 		system("cls");
