@@ -5,19 +5,6 @@
 #include <conio.h>
 #include <ctime>
 #include <cstdlib>
-//13
-using namespace std;
-int main() {
-
-	HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE); //Color for text
-	HANDLE hstdin = GetStdHandle(STD_INPUT_HANDLE); //Color for text
-
-	int x = 1, y = 1, sx = 1, sy = 1, ex = 8, ey = 8, m, n, k;
-	/*
-	int a[10][10] = { 0,0,0,0,0,0,0,0,0,0,
-	0,1,0,1,1,1,1,1,1,0,
-	0,1,0,0,1,0,0,0,1,0,
-	0,1,0,1,1,1,0,1,0,0,
 	0,1,1,1,0,1,1,1,1,0,
 	0,1,0,1,0,1,1,0,1,0,
 	0,0,0,1,0,1,1,0,1,0,
@@ -58,16 +45,6 @@ int main() {
 			}
 			an[x - 1][y] = 2;
 		
-			y++;
-		}
-		else if (answer == "r" && a[x][y + 1] == 0 && x != 9 && x != 0 && y != 0 && y + 1 != 9) {
-			a[x][y + 1] = 4;
-			an[x][y + 1] = 4;
-		}
-		if (answer == "l" && (a[x][y - 1] == 1 || a[x][y - 1] == 2)) {
-			if (a[x][y - 1] == 2) {
-				a[x][y] = 1;
-				an[x][y] = 0;
 			}
 			an[x][y - 1] = 2;
 			a[x][y - 1] = 2;
