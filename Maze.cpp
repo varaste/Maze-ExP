@@ -7,18 +7,6 @@
 #include <cstdlib>
 	0,1,1,1,0,1,1,1,1,0,
 	0,1,0,1,0,1,1,0,1,0,
-	0,0,0,1,0,1,1,0,1,0,
-	!= 9 && n != 9) {
-		a[m][n] = 1;
-		k = rand() % 2;
-		if (k == 0)
-			m++;
-		else
-			n++;
-	}
-	ex = m;
-	ey = n;
-	/*
 	for (int i = 0; i < 10; i++) {
 	for (int j = 0; j < 10; j++) {
 	cout << a[i][j]<<" ";
@@ -51,12 +39,6 @@
 
 			y--;
 			an[x][y - 1] = 4;
-		}
-		system("cls");
-
-		cout << endl;
-		for (int i = 0; i < 10; i++) {
-				cout << char(219) << char(219);
 				}
 				if (an[i][j] == 2) {
 					SetConsoleTextAttribute(hstdout, 0x0a); //Color for text
@@ -69,8 +51,3 @@
 
 			cout << endl;
 		}
-		cout << endl;
-	}
-	cout << "shoma bordid\n";
-	system("pause");
-}
