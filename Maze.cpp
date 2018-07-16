@@ -11,13 +11,6 @@
 	for (int j = 0; j < 10; j++) {
 	cout << a[i][j]<<" ";
 	}
-	cout << endl;
-	}
-	*/
-	a[sx][sy] = 2;
-	an[sx][sy] = 2;
-
-	while (x != ex && y != ey) {
 		SetConsoleTextAttribute(hstdout, 0x09); //Color for text
 		cout << "what direction you want to go\n";
 		cin >> answer;
@@ -32,13 +25,6 @@
 				an[x][y] = 0;
 			}
 			an[x - 1][y] = 2;
-		
-			}
-			an[x][y - 1] = 2;
-			a[x][y - 1] = 2;
-
-			y--;
-			an[x][y - 1] = 4;
 				}
 				if (an[i][j] == 2) {
 					SetConsoleTextAttribute(hstdout, 0x0a); //Color for text
@@ -47,7 +33,3 @@
 					cout << char(219);
 				}
 			
-			}
-
-			cout << endl;
-		}
